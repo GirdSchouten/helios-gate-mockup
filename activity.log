@@ -517,3 +517,4 @@
 2025-07-11 15:20:42 change configuration
 2025-10-01 00:07:43 stabilize build
 2025-04-29 11:47:28 style improvements
+2025-02-01 23:08:45 fix null pointer
