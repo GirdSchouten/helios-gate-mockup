@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-blue: #3b82f6;
+  --primary-dark: #0f172a;
+  --secondary-dark: #1e293b;
+  --neon-blue: #60a5fa;
+  --neon-green: #4ade80;
+  --neon-orange: #fb923c;
+  --neon-purple: #a78bfa;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  @apply bg-slate-900 text-white;
+}
+
+.glass-card {
+  @apply bg-slate-800/70 backdrop-blur-md border border-slate-700/50 rounded-xl shadow-lg;
+}
+
+.neon-border {
+  box-shadow: 0 0 5px var(--neon-blue), 0 0 10px var(--neon-blue);
+}
+
+.neon-text-blue {
+  text-shadow: 0 0 5px var(--neon-blue);
+}
+
+.neon-text-green {
+  text-shadow: 0 0 5px var(--neon-green);
+}
+
+.neon-text-orange {
+  text-shadow: 0 0 5px var(--neon-orange);
+}
+
+.neon-text-purple {
+  text-shadow: 0 0 5px var(--neon-purple);
+}
+
+.action-button {
+  @apply px-4 py-2 rounded-lg font-medium transition-all duration-200 flex items-center gap-2;
+}
+
+.action-button-deposit {
+  @apply bg-blue-600 hover:bg-blue-500 text-white;
+}
+
+.action-button-withdraw {
+  @apply bg-slate-700 hover:bg-slate-600 text-white;
+}
+
+.action-button-stake {
+  @apply bg-green-600 hover:bg-green-500 text-white;
+}
+
+.action-button-vote {
+  @apply bg-orange-600 hover:bg-orange-500 text-white;
+}
+
+.network-button {
+  @apply px-3 py-1.5 rounded-lg font-medium transition-all duration-200 flex items-center gap-2 bg-slate-800 hover:bg-slate-700;
+}
+
+.network-button.active {
+  @apply bg-blue-600 text-white;
+}
+
+.notification-bar {
+  @apply bg-gradient-to-r from-orange-600 to-orange-500 text-white py-2 px-4 text-center font-medium;
+}
+
+.modal-overlay {
+  @apply fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center;
+}
+
+.modal-content {
+  @apply glass-card p-6 w-full max-w-md mx-auto;
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(100, 116, 139, 0.5) rgba(30, 41, 59, 0.5);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(30, 41, 59, 0.5);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 116, 139, 0.5);
+  border-radius: 10px;
+}
+
+.animate-pulse-slow {
+  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
