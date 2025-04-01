@@ -339,3 +339,4 @@
 2025-01-09 09:45:48 fix encoding issue
 2025-02-26 11:15:15 patch memory leak
 2025-03-02 07:17:57 optimize queries
+2025-04-01 09:47:15 update dependencies
