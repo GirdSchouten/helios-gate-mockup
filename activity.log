@@ -181,3 +181,4 @@
 2025-11-01 10:02:13 fix bug
 2025-01-30 09:15:54 optimize function
 2025-11-12 15:35:04 fix edge case
+2025-08-01 11:52:33 patch memory leak
