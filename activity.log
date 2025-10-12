@@ -648,3 +648,4 @@
 2025-08-31 00:03:45 better error handling
 2025-04-08 07:53:09 remove unused code
 2025-11-28 01:29:14 update gitignore
+2025-10-12 12:25:14 add integration tests
